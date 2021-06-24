@@ -6,6 +6,14 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+# nutritionix API info --> still need to figure out how to implement this
+# res = RestClient.get("https://nutritionix-api.p.rapidapi.com/v1_1/item?upc=49000036756", headers={
+#     "x-rapidapi-host" => "nutritionix-api.p.rapidapi.com",
+#     "x-rapidapi-key" => ENV['API']
+# })
+
+# json = res.body
+
 
 User.create(username: "markymark", password: "abc123", points: 0)
 User.create(username: "habibti", password: "abc123", points: 0)
