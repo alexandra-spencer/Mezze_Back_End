@@ -44,3 +44,6 @@ gem 'jwt', '~> 2.2', '>= 2.2.2'
 
 #
 # gem 'bootstrap', '~> 4.6'
+
+#added 06/25/2021
+gem 'rest-client', '~> 1.8'
