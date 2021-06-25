@@ -47,3 +47,4 @@ gem 'jwt', '~> 2.2', '>= 2.2.2'
 
 #added 06/25/2021
 gem 'rest-client', '~> 1.8'
+gem 'dot_env', '~> 0.0.3'
