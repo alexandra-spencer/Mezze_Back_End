@@ -6,6 +6,25 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+#addition on 06/25/2021
+# def nutritionix_key
+#   ENV['NUTRITIONIX_API']
+# end
+
+# def nutrition_dataset
+
+#   api_data = {key: nutritionix_key}
+
+#   nutrition = RestClient.get('https://nutritionix-api.p.rapidapi.com/v1_1/item?upc=49000036756&apiKey=#{api_data[:key]}')
+
+#   nutrition_array = JSON.parse(nutrition)['calories']
+
+#   nutrition_array.each do |food|
+#     Mezze.create(name: food["name"], calories: food["calories"])
+#   end
+# end
+
+#addition from 06/24/2021
 # nutritionix API info --> still need to figure out how to implement this
 # res = RestClient.get("https://nutritionix-api.p.rapidapi.com/v1_1/item?upc=49000036756", headers={
 #     "x-rapidapi-host" => "nutritionix-api.p.rapidapi.com",

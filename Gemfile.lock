@@ -74,10 +74,15 @@ GEM
       activesupport
     concurrent-ruby (1.1.8)
     crass (1.0.6)
+    domain_name (0.5.20190701)
+      unf (>= 0.0.5, < 1.0.0)
+    dot_env (0.0.3)
     erubi (1.10.0)
     ffi (1.14.2)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    http-cookie (1.0.4)
+      domain_name (~> 0.5)
     i18n (1.8.9)
       concurrent-ruby (~> 1.0)
     jsonapi-renderer (0.2.2)
@@ -93,11 +98,13 @@ GEM
     marcel (0.3.3)
       mimemagic (~> 0.3.2)
     method_source (1.0.0)
+    mime-types (2.99.3)
     mimemagic (0.3.5)
     mini_mime (1.0.2)
     mini_portile2 (2.5.0)
     minitest (5.14.4)
     msgpack (1.4.2)
+    netrc (0.11.0)
     nio4r (2.5.5)
     nokogiri (1.11.1)
       mini_portile2 (~> 2.5.0)
@@ -145,6 +152,10 @@ GEM
     rb-fsevent (0.10.4)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    rest-client (1.8.0)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 3.0)
+      netrc (~> 0.7)
     spring (2.1.1)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
@@ -156,6 +167,9 @@ GEM
     thor (1.1.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.7)
     websocket-driver (0.7.3)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
@@ -171,17 +185,19 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   bootsnap (>= 1.4.4)
   byebug
+  dot_env (~> 0.0.3)
   jwt (~> 2.2, >= 2.2.2)
   listen (~> 3.3)
   pg (~> 1.2.3)
   puma (~> 5.0)
   rack-cors
   rails (~> 6.1.2, >= 6.1.2.1)
+  rest-client (~> 1.8)
   spring
   tzinfo-data
 
 RUBY VERSION
-   ruby 2.6.6p146
+   ruby 2.6.1p33
 
 BUNDLED WITH
    2.2.11
